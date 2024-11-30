@@ -212,7 +212,7 @@ body {
 .booking-section {
   width: 100%;
   height: 100vh;
-  background: url("C:/Users/krina/OneDrive/Desktop/back.jpg") no-repeat center center;
+  background: url("Images/back.jpg") no-repeat center center;
   background-size: cover;
   display: flex;
   justify-content: flex-start;
