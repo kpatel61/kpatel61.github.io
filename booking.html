@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viv Nail Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="Images/logo.png" alt="Viv Nail Gallery Logo"> Viv Nail Gallery
+      </div>
+      <!-- Navigation -->
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="promotions.html">Promotions</a>
+      </nav>
+    </div>
+    <!-- Booking Button Section with Background Image -->
+
+  </header>
+
+
+  <Section class="booking-page">
+    <div class="booking-container">
+      <h1 class="booking-title">Book Your Appointment</h1>
+      <p class="booking-description">Select a date and time that works best for you!</p>
+
+      <form action="#" class="booking-form">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        </div>
+        <div class="form-group">
+          <label for="date">Choose a Date:</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+          <label for="time">Choose a Time:</label>
+          <select id="time" name="time" required>
+            <option value="" disabled selected>Select a time</option>
+            <option value="10:00 AM">10:00 AM</option>
+            <option value="11:00 AM">11:00 AM</option>
+            <option value="12:00 PM">12:00 PM</option>
+            <option value="1:00 PM">1:00 PM</option>
+            <option value="2:00 PM">2:00 PM</option>
+            <option value="3:00 PM">3:00 PM</option>
+            <option value="4:00 PM">4:00 PM</option>
+            <option value="5:00 PM">5:00 PM</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="service">Choose a Service:</label>
+          <select id="service" name="service" required>
+            <option value="" disabled selected>Select a service</option>
+            <option value="Manicure">Manicure</option>
+            <option value="Pedicure">Pedicure</option>
+            <option value="Nail Art">Nail Art</option>
+            <option value="Gel Nails">Gel Nails</option>
+            <option value="Acrylic Nails">Acrylic Nails</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-submit">Confirm Booking</button>
+      </form>
+    </div>
+  </Section>
+  
+  
+  <!-- Footer Section -->
+
+  <footer>
+    <p>© 2024 Viv Nail Gallery. All rights reserved.</p>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="promotions.html">Promotions</a></li>
+      </ul>
+    <p>Follow us on social media:</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/viv_nail_gallery/" target="_blank" aria-label="Visit us on Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+    <p class="contact-info">Email: info@yourcompany.com | Phone: +1 123-456-7890 | Address: St Marie</p>
+</footer>
+</body>
+</html>
