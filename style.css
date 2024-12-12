@@ -728,84 +728,91 @@ footer .social-icons a:hover {
 }
 /* Contact Page Section Ended*/
 
-/*Booking Page Section Start*/
-
+/* Booking Page */
 .booking-page {
   padding: 50px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #fefefe;
+  background-color: rgba(255, 255, 255, 0.9);
+  background-image: url('Images/booking-bg.jpeg');
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  max-width: 1000px;
+  margin: 50px auto;
+  text-align: center;
 }
 
-.booking-container {
-  max-width: 600px;
-  width: 100%;
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-.booking-title {
-  font-size: 2em;
+.booking-container h1 {
+  font-size: 2.5em;
   color: #4CAF50;
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-.booking-description {
-  font-size: 1.1em;
-  color: #666;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.booking-form .form-group {
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
-.booking-form label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
+.booking-container p {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* Booking Form */
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-group label {
+  font-size: 1em;
   color: #333;
+  margin-bottom: 8px;
 }
 
-.booking-form input,
-.booking-form select {
+.form-group input,
+.form-group select {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   font-size: 1em;
   border: 1px solid #ddd;
   border-radius: 5px;
-  background-color: #f9f9f9;
-  transition: border-color 0.3s ease;
+  box-sizing: border-box;
 }
 
-.booking-form input:focus,
-.booking-form select:focus {
-  border-color: #4CAF50;
-  outline: none;
+.form-group input::placeholder,
+.form-group select {
+  color: #aaa;
 }
 
 .btn-submit {
-  display: block;
-  width: 100%;
-  padding: 12px 20px;
-  font-size: 1.1em;
-  color: #fff;
   background-color: #4CAF50;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.1em;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
 }
 
 .btn-submit:hover {
   background-color: #388e3c;
-  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  .booking-form {
+    max-width: 100%;
+  }
 }
 
 /*Booking Page Section End*/
